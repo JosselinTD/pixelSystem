@@ -1,0 +1,157 @@
+body {
+  width: calc(100vw - 8px);
+  height: calc(100vh - 8px);
+  padding: 8px;
+  box-sizing: border-box;
+  border-width: 4px;
+  border-style: solid;
+  border-image-source: url(gui/borders/blue.png);
+  border-image-slice: 4 fill;
+  border-image-repeat: repeat;
+}
+
+.container {
+  border-width: 48px;
+  border-style: solid;
+  border-image-source: url(gui/borders/wood.png);
+  border-image-slice: 48 fill;
+  border-image-repeat: repeat;
+
+  display: inline-block;
+}
+
+.frame {
+  border-width: 12px;
+  border-style: solid;
+  border-image-source: url(gui/borders/large-orange.png);
+  border-image-slice: 12;
+  border-image-repeat: repeat;
+  /*border : 4px solid #262b44;*/
+
+  height: 200px;
+  width: 200px;
+
+  display: inline-block;
+
+  background-repeat: no-repeat;
+
+  background-image: linear-gradient(
+    to bottom,
+    #1a237e 0%,
+    #1a237e 10%,
+    #303f9f 10%,
+    #303f9f 15%,
+    #1565c0 15%,
+    #1565c0 17%,
+    #82b1ff 17%,
+    #82b1ff 70%,
+    #30ab57 70%,
+    #30ab57 75%,
+    #257450 75%,
+    #257450 85%,
+    #1b4b4a 85%
+  );
+}
+
+.character {
+  background-image: url(characters/0.png);
+  background-repeat: no-repeat;
+  background-size: 144px;
+  
+  width : 48px;
+  height : 60px;
+
+  animation-name: characterSprite; 
+  animation-duration: 300ms;
+  animation-timing-function: steps(3);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  display: inline-block;
+  position: relative;
+  left: 76px;
+  top: 100px;
+}
+
+@keyframes characterSprite {
+  from { background-position: 0px 0px; }
+  to { background-position: -144px 0px; }
+}
+
+button {
+  border-width: 12px;
+  border-style: solid;
+  border-image-source: url(gui/borders/thin-bar.png);
+  border-image-slice: 12 fill;
+  border-image-repeat: repeat;
+
+  background-color: #b86f50;
+
+  padding: 5px;
+  cursor: pointer;
+
+  color: #ead4aa;
+}
+
+button:hover {
+  background-color: #e4a672;
+}
+
+button:active {
+  background-color: #b86f50;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+.icon.adamantium {
+  background-image: url(gui/icons/adamantium.png);
+}
+.icon.energy {
+  background-image: url(gui/icons/energy.png);
+}
+.icon.eye {
+  background-image: url(gui/icons/eye.png);
+}
+.icon.gold {
+  background-image: url(gui/icons/gold.png);
+}
+.icon.heart {
+  background-image: url(gui/icons/heart.png);
+}
+.icon.inventory {
+  background-image: url(gui/icons/inventory.png);
+}
+.icon.key {
+  background-image: url(gui/icons/key.png);
+}
+.icon.luck {
+  background-image: url(gui/icons/luck.png);
+}
+.icon.mana {
+  background-image: url(gui/icons/mana.png);
+}
+.icon.quest {
+  background-image: url(gui/icons/quest.png);
+}
+.icon.shield {
+  background-image: url(gui/icons/shield.png);
+}
+.icon.shop {
+  background-image: url(gui/icons/shop.png);
+}
+.icon.silver {
+  background-image: url(gui/icons/silver.png);
+}
+.icon.skull {
+  background-image: url(gui/icons/skull.png);
+}
+.icon.strength {
+  background-image: url(gui/icons/strength.png);
+}
+.icon.wisdom {
+  background-image: url(gui/icons/wisdom.png);
+}
